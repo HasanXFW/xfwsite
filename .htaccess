@@ -1,0 +1,17 @@
+RewriteEngine on
+
+#RewriteCond %{SERVER_PORT} 80 
+#RewriteRule ^(.*)$ http://craftrosi.host.bil.tc/$1 [R,L]
+
+#RewriteCond %{HTTP_HOST} ^site_adi.com. [NC]
+#RewriteRule ^(.*)$ http://craftrosi.host.bil.tc/$1 [L,R=301,NC]
+
+
+#Seo url oluşturma
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^(.*)$ $1.php
+
+#404 hata sayfası yönlendirme kodu
+ErrorDocument 404 /admin/404.php
+ErrorDocument 500 /admin/500.php
